@@ -41,7 +41,7 @@ urlpatterns = [
    # Suministro URL's
    path('administration/suministro/', SuministroView.as_view(), name='suministro'),
    path('create-suministro/', SuministroCreateView.as_view(), name='create_suministro'),
-   path('edit-suministro/<int:pk>/', SuministroUpdateView.as_view(), name='edit_suministro'),
+   path('administration/suministro/edit-suministro/<int:pk>/', SuministroUpdateView.as_view(), name='edit_suministro'),
    # Medidor URL's
    path('administration/suministro/medidor/<int:pk>/', MedidorListView.as_view(), name='list_medidor'),
    path('administration/suministro/medidor/<int:pk>/detail/', MedidorDetailView.as_view(), name='detail_medidor'),
